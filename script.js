@@ -17,7 +17,7 @@ function createGrid(gridSize) {
       gridSquare.style.height = `${squareSize}px`;
 
       // add hover functionality to grid square
-      gridSquare.addEventListener('mouseover', () => {
+      gridSquare.addEventListener('mouseenter', () => {
         gridSquare.classList.add('hovered');
       });
 
