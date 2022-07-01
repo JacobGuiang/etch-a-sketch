@@ -34,11 +34,11 @@ const button = document.querySelector('button');
 // allow user to change grid size with button click
 button.addEventListener('click', () => {
   // prompt user for new grid size
-  let gridSize = parseInt(prompt('Enter number of squares per size of new grid'));
+  let gridSize = parseInt(prompt('Enter number of squares per side of new grid'));
   // make sure user input is valid
   while(!gridSize || gridSize < 0 || gridSize > 100) {
     let errorMsg = (!gridSize || gridSize < 0) ? 'Invalid number.' : 'Grid size cannot be greater than 100.';
-    gridSize = parseInt(prompt(`${errorMsg} Enter number of squares per size of new grid`));
+    gridSize = parseInt(prompt(`${errorMsg} Enter number of squares per side of new grid`));
   }
 
   container.replaceChildren();  // remove previous grid
